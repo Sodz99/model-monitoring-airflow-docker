@@ -1,0 +1,74 @@
+# Code-only whitelist: ignore everything, then allow source files back in
+*
+!*/
+!.gitignore
+!.gitattributes
+!*.py
+!*.ipynb
+!*.sql
+!*.r
+!*.R
+!*.sh
+!*.ps1
+!*.bat
+!*.js
+!*.ts
+!*.html
+!*.css
+!*.java
+!*.scala
+!*.yml
+!*.yaml
+!*.toml
+!*.cfg
+!*.ini
+!*.conf
+!*.md
+!requirements*.txt
+!Dockerfile
+!Makefile
+!Procfile
+!.env.example
+
+# Never commit, even inside allowed folders
+**/__pycache__/
+**/.ipynb_checkpoints/
+**/__MACOSX/
+**/venv/
+**/.venv/
+**/env/
+**/site-packages/
+**/node_modules/
+**/.env
+**/.env.*
+!**/.env.example
+**/data/
+**/input/
+**/Database_backup/
+**/.conda/
+**/cdk.out/
+**/TOS_DI-*/
+**/darknet/
+**/labelImg-master/
+**/jTessBoxEditor*/
+**/Tesseract-OCR/
+
+# Too large or duplicate
+/code (1)/local/airflow.sh
+/code (1)/local/dags/app.py
+/code (1)/local/dags/dag_pipeline.py
+/code (1)/local/dags/dag_test.py
+/code (1)/local/dags/results/1c23efb65ad94df393aed12f681a7899_data_drift_report.html
+/code (1)/local/dags/results/1c23efb65ad94df393aed12f681a7899_data_quality_report.html
+/code (1)/local/dags/results/1c23efb65ad94df393aed12f681a7899_model_drift_report.html
+/code (1)/local/dags/results/85119a37760a44d0b54eccb022180ea2_data_quality_report.html
+/code (1)/local/dags/src/config.py
+/code (1)/local/dags/src/drifts.py
+/code (1)/local/dags/src/etl.py
+/code (1)/local/dags/src/helpers.py
+/code (1)/local/dags/src/inference.py
+/code (1)/local/dags/src/preprocess.py
+/code (1)/local/dags/src/queries.py
+/code (1)/local/dags/src/train.py
+/code (1)/local/docker-compose.yaml
+/code (1)/local/requirements.txt
